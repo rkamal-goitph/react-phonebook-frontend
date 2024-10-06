@@ -3,7 +3,7 @@ import styles from './PhonebookHeader.module.css';
 import { useDispatch } from 'react-redux';
 import { logOut } from '../../redux/auth/authOperations';
 
-export const PhonebookHeader = () => {
+export const PhonebookHeader = ({ user }) => {
   const dispatch = useDispatch();
 
   const handleLogoutUser = () => {
@@ -12,7 +12,7 @@ export const PhonebookHeader = () => {
 
   return (
     <div className={styles.phonebookHeader}>
-      <h1>Phonebook</h1>
+      <h1>{`${user.email}'s Phonebook`}</h1>
       <button
         className={styles.logout}
         type="button"
