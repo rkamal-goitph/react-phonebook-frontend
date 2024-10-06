@@ -1,0 +1,22 @@
+.divFilter {
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.divFilter p {
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
